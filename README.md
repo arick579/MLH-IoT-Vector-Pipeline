@@ -1,4 +1,4 @@
-# MLH-IoT-Vector-Pipelinee
+# MLH-IoT-Vector-Pipeline
 
 ## Context
 An end-to-end AI data pipeline engineered during **MLH (Major League Hacking) – Global Hack Week: Data | September 2026**. This project demonstrates hybrid database architecture, combining traditional IoT time-series data with modern AI capabilities.
