@@ -1,5 +1,5 @@
-# MLH-IoT-Vector-Pipeline
-
+# MLH IoT Vector Pipeline
+An end-to-end AI data pipeline engineered with TimescaleDB, pgvector, and Model Context Protocol (MCP) in a PostgreSQL environment. The system ingests simulated IoT telemetry into hypertables alongside DiskANN vector search to enable autonomous, memory-efficient RAG analysis for AI agents.
 ## Project Overview
 * Engineered an end-to-end AI data pipeline ingesting simulated IoT sensor time-series telemetry into a **TimescaleDB hypertable**, applying columnstore compression to optimize analytical query performance.
 * Implemented AI-powered vector search using **pgvector** and **pgvectorscale**, configuring **DiskANN indexes** to enable memory-efficient semantic retrieval alongside time-bucket aggregations for hybrid Retrieval-Augmented Generation (RAG).
