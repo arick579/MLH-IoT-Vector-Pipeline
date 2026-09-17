@@ -1,3 +1,4 @@
+[![IoT Vector Pipeline CI](https://github.com/arick579/MLH-IoT-Vector-Pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/arick579/MLH-IoT-Vector-Pipeline/actions)
 # MLH IoT Vector Pipeline
 An end-to-end AI data pipeline engineered with TimescaleDB, pgvector, and Model Context Protocol (MCP) in a PostgreSQL environment. The system ingests simulated IoT telemetry into hypertables alongside DiskANN vector search to enable autonomous, memory-efficient RAG analysis for AI agents.
 ## Project Overview
