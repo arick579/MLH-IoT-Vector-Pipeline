@@ -19,7 +19,7 @@ This project demonstrates hybrid database architecture, combining traditional Io
 ## Tech Stack
 * **Database & Storage:** PostgreSQL 17, TimescaleDB (Hypertables), Tiger Cloud
 * **AI & Search:** pgvector, pgvectorscale, DiskANN Indexes
-* **Agent Integration:** Model Context Protocol (MCP), Tiger CLI, Local LLM Agents (Cursor, Claude Code, VS Code)
+* **Agent Integration:** Model Context Protocol (MCP), Tiger CLI, Local LLM Agents (Cursor)
 * **Infrastructure:** CloudNativePG Kubernetes Operator, YAML Manifests
 * **Data Type:** Simulated IoT Sensor Telemetry (Time-series) & 1536-dimensional Vector Embeddings
 
