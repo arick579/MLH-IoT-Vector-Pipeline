@@ -1,0 +1,32 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: timescaledb-cluster
+  namespace: timescaledb
+spec:
+  instances: 3
+  imageCatalogRef:
+    apiGroup: postgresql.cnpg.io
+    kind: ImageCatalog
+    name: timescale-ai
+    major: 17
+  storage:
+    size: 10Gi
+  postgresql:
+    shared_preload_libraries:
+      - timescaledb
+    parameters:
+      work_mem: '128MB'
+      maintenance_work_mem: '1GB'
+      shared_buffers: '512MB'
+      effective_cache_size: '1536MB'
+      max_connections: '100'
+      timescaledb.max_background_workers: '4'
+  bootstrap:
+    initdb:
+      database: app
+      owner: app
+      postInitApplicationSQL:
+        - CREATE EXTENSION IF NOT EXISTS timescaledb CASCADE;
+        - CREATE EXTENSION IF NOT EXISTS vector CASCADE;
+        - CREATE EXTENSION IF NOT EXISTS vectorscale CASCADE;
