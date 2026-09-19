@@ -75,9 +75,3 @@ Run the verification suite to ensure pgvector, pgvectorscale, and DiskANN indexi
 psql -h <your-host> -U postgres -d app -f 02_vector_search_init.sql
 ```
 
-
-## Engineering & Performance Highlights
-
-* **Hypertable Compression:** Leverages TimescaleDB's chunking policy, achieving up to 95% storage savings on historic telemetry without impacting analytical time_bucket queries.
-* **Low-Memory Vector Search:** DiskANN indexes allow vector similarity search over high-dimensional embeddings with minimal RAM overhead (consuming tens of kilobytes versus gigabytes required by standard HNSW indexes).
-* **Enterprise Security Guardrails:** Utilizes TIGER_READ_ONLY=prod flags and constrained MCP tools to protect raw operational database tables against unintended mutating queries during autonomous LLM exploration.
